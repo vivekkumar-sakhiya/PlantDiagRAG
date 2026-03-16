@@ -34,10 +34,10 @@ PlantDiagRAG is a unified framework that combines **disease classification**, **
 ┌─────────────────────────────────────────────────────────────┐
 │                      PlantDiagRAG                           │
 ├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────┐   ┌─────────────┐   ┌─────────────────┐   │
-│  │   ViT-Base  │   │  BERT-Base  │   │ Flan-T5 + LoRA  │   │
-│  │   (Vision)  │   │   (Text)    │   │   (Generation)  │   │
-│  └──────┬──────┘   └──────┬──────┘   └────────┬────────┘   │
+│  ┌─────────────┐   ┌─────────────┐   ┌─────────────────┐    │
+│  │   ViT-Base  │   │  BERT-Base  │   │ Flan-T5 + LoRA  │    │
+│  │   (Vision)  │   │   (Text)    │   │   (Generation)  │    │
+│  └──────┬──────┘   └──────┬──────┘   └─────────┬───────┘    │
 │         │                 │                    │            │
 │         └────────┬────────┘                    │            │
 │                  ▼                             │            │
@@ -46,12 +46,12 @@ PlantDiagRAG is a unified framework that combines **disease classification**, **
 │         │   Attention   │                                   │
 │         └───────┬───────┘                                   │
 │                 │                                           │
-│    ┌────────────┼────────────┐                             │
-│    ▼            ▼            ▼                             │
-│ ┌──────┐   ┌─────────┐   ┌─────────┐                       │
-│ │Class │   │   VQA   │   │   RAG   │                       │
-│ │ Head │   │ Output  │   │ Retrieval│                      │
-│ └──────┘   └─────────┘   └─────────┘                       │
+│    ┌────────────┼────────────┐                              │
+│    ▼            ▼            ▼                              │
+│ ┌──────┐   ┌─────────┐   ┌─────────┐                        │
+│ │Class │   │   VQA   │   │   RAG   │                        │
+│ │ Head │   │ Output  │   │Retrieval│                        │
+│ └──────┘   └─────────┘   └─────────┘                        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -160,11 +160,11 @@ Or download directly from: [HuggingFace Hub](https://huggingface.co/viveksakhiya
 
 ### PlantVillage
 - **Images**: 54,306 images across 38 classes
-- **Source**: [PlantVillage Dataset](https://github.com/spMohanty/PlantVillage-Dataset)
+- **Source**: [PlantVillage Dataset](https://www.kaggle.com/datasets/divyasharma20/plantv/data)
 
 ### PlantVillageVQA
 - **QA Pairs**: 193,609 question-answer pairs
-- **Test Set**: 38,632 samples
+- **Source**: [PlantVillageVQA Dataset](https://huggingface.co/datasets/SyedNazmusSakib/PlantVillageVQA)
 
 ### Knowledge Base
 - **Documents**: 54 agricultural documents
@@ -224,15 +224,12 @@ If you use PlantDiagRAG in your research, please cite:
 ```bibtex
 @article{sakhiya2026plantdiagrag,
   title={PlantDiagRAG: A Unified Vision-Language Framework for Plant Disease Diagnosis and Treatment Recommendation},
-  author={Sakhiya, Vivek and Kumar, Abhinav},
-  journal={IEEE Transactions on Artificial Intelligence},
+  author={Vivekkumar Sakhiya and Dr. Abhinav Kumar},
+  journal={},
   year={2026}
 }
 ```
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -244,8 +241,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **Author**: Vivek Sakhiya
-- **Email**: [your-email@example.com]
+- **Author**: Vivekkumar Sakhiya
+- **Email**: [vivekskahiya369@gmail.com]
 - **Supervisor**: Dr. Abhinav Kumar, MNNIT Allahabad
 
 ---
