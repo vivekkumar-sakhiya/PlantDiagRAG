@@ -61,7 +61,7 @@ PlantDiagRAG is a unified framework that combines **disease classification**, **
 
 ```bash
 # Clone the repository
-git clone https://github.com/viveksakhiya/PlantDiagRAG.git
+git clone https://github.com/vivekkumar-sakhiya/PlantDiagRAG.git
 cd PlantDiagRAG
 
 # Install dependencies
@@ -133,7 +133,6 @@ PlantDiagRAG/
 ├── scripts/                   # CLI scripts
 │   ├── inference.py           # Command line inference
 │   └── demo_gradio.py         # Gradio web demo
-├── notebooks/                 # Jupyter notebooks
 ├── requirements.txt
 └── README.md
 ```
