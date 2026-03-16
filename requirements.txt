@@ -1,0 +1,39 @@
+# PlantDiagRAG Requirements
+# Tested with Python 3.10+
+
+# Core Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Transformers and PEFT
+transformers==4.36.0
+peft==0.7.0
+
+# Sentence Transformers and FAISS
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+
+# Image Processing
+Pillow>=9.0.0
+
+# NLP Metrics
+nltk>=3.8.0
+rouge-score>=0.1.2
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+tqdm>=4.65.0
+scikit-learn>=1.3.0
+
+# Web Demo (optional)
+gradio>=4.0.0
+
+# For GPU support, install:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
