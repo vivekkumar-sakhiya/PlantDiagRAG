@@ -1,0 +1,105 @@
+# PlantDiagRAG Model Configuration
+
+# Model Architecture
+model:
+  name: "PlantDiagRAG"
+  version: "1.0.0"
+  
+  # Vision Encoder
+  vision:
+    name: "google/vit-base-patch16-224"
+    hidden_size: 768
+    patch_size: 16
+    image_size: 224
+    unfreeze_layers: 2  # Last 2 ViT layers are trainable
+  
+  # Text Encoder
+  text:
+    name: "bert-base-uncased"
+    hidden_size: 768
+    max_length: 128
+  
+  # Language Model
+  language_model:
+    name: "google/flan-t5-base"
+    hidden_size: 768
+    max_length: 128
+    
+    # LoRA Configuration
+    lora:
+      enabled: true
+      r: 16
+      alpha: 32
+      dropout: 0.1
+      target_modules: ["q", "v"]
+  
+  # Fusion
+  fusion:
+    cross_attention_heads: 8
+    dropout: 0.1
+  
+  # Classification Head
+  classifier:
+    num_classes: 38
+    hidden_dim: 384
+    dropout: 0.1
+
+# Training Configuration
+training:
+  # Classification Training
+  classification:
+    epochs: 10
+    batch_size: 16
+    learning_rate: 2.0e-5
+    weight_decay: 0.01
+    warmup_ratio: 0.1
+    
+  # VQA Training
+  vqa:
+    epochs: 10
+    batch_size: 8
+    learning_rate: 1.0e-4
+    weight_decay: 0.01
+    warmup_ratio: 0.1
+
+# Inference Configuration
+inference:
+  classification:
+    prompt: "Classify the plant disease in this image."
+    
+  vqa:
+    default_question: "What is wrong with this plant and how can I treat it?"
+    max_length: 128
+    num_beams: 4
+    early_stopping: true
+
+# RAG Configuration
+rag:
+  embedding_model: "all-MiniLM-L6-v2"
+  embedding_dim: 384
+  index_type: "IndexFlatIP"
+  top_k: 3
+  
+  # Source Weights
+  source_weights:
+    ICAR: 2.0
+    UC_IPM: 0.5
+    PNW_Handbook: 0.3
+    AGROVOC: 0.1
+
+# Paths (relative to repository root)
+paths:
+  checkpoints:
+    vqa: "checkpoints/best_vqa_model.pt"
+    classifier: "checkpoints/best_classifier_v2.pt"
+  
+  configs:
+    label_mapping: "configs/label_mapping.json"
+  
+  knowledge_base: "knowledge_base/all_kb_documents.json"
+
+# Hardware
+hardware:
+  device: "cuda"  # or "cpu"
+  mixed_precision: true
+  seed: 42
