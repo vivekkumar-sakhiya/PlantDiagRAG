@@ -20,7 +20,7 @@ pip install huggingface_hub
 python -c "
 from huggingface_hub import hf_hub_download
 hf_hub_download(
-    repo_id='viveksakhiya/PlantDiagRAG',
+    repo_id='vivek-sakhiya/PlantDiagRAG',
     filename='best_vqa_model.pt',
     local_dir='checkpoints'
 )
@@ -30,7 +30,7 @@ hf_hub_download(
 python -c "
 from huggingface_hub import hf_hub_download
 hf_hub_download(
-    repo_id='viveksakhiya/PlantDiagRAG',
+    repo_id='vivek-sakhiya/PlantDiagRAG',
     filename='best_classifier_v2.pt',
     local_dir='checkpoints'
 )
@@ -39,13 +39,7 @@ hf_hub_download(
 
 ### Option 2: Direct Download
 
-Download from HuggingFace Hub: https://huggingface.co/viveksakhiya/PlantDiagRAG
-
-### Option 3: Google Drive
-
-If HuggingFace is unavailable, download from Google Drive:
-- [best_vqa_model.pt](https://drive.google.com/file/d/YOUR_FILE_ID/view)
-- [best_classifier_v2.pt](https://drive.google.com/file/d/YOUR_FILE_ID/view)
+Download from HuggingFace Hub: https://huggingface.co/vivek-sakhiya/PlantDiagRAG
 
 ## Checkpoint Details
 
