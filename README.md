@@ -4,7 +4,6 @@
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 PlantDiagRAG is a unified framework that combines **disease classification**, **visual question answering (VQA)**, and **RAG-based treatment recommendations** into a single system for comprehensive plant disease diagnosis.
 
