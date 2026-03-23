@@ -113,7 +113,7 @@ Upload an image of a plant leaf to get:
 - **Knowledge Base**: ICAR, UC IPM, PNW Handbook, AGROVOC (54 documents)
 - **Architecture**: ViT-Base + BERT-Base + Flan-T5-Base with LoRA
 
-📄 [Paper](#) | 💻 [GitHub](https://github.com/viveksakhiya/PlantDiagRAG)
+📄 [Paper](#) | 💻 [GitHub](https://github.com/vivekkumar-sakhiya/PlantDiagRAG)
 """)
         
         submit_btn.click(
