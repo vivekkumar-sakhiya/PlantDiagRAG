@@ -5,8 +5,8 @@ This directory should contain the PlantVillage dataset for training and evaluati
 ## Required Data
 
 ### PlantVillage Dataset
-- **Images**: 54,306 images across 38 classes
-- **Source**: [GitHub - spMohanty/PlantVillage-Dataset](https://github.com/spMohanty/PlantVillage-Dataset)
+- **Images**: 54,305 images across 38 classes
+- **Source**: [Kaggle - PlantVillage Dataset](https://www.kaggle.com/datasets/divyasharma20/plantv)
 
 ### PlantVillageVQA Dataset
 - **QA Pairs**: 193,609 question-answer pairs
@@ -14,26 +14,22 @@ This directory should contain the PlantVillage dataset for training and evaluati
 
 ## Download Instructions
 
-### Option 1: Download from Original Source
-
-```bash
-# Clone PlantVillage dataset
-git clone https://github.com/spMohanty/PlantVillage-Dataset.git
-
-# Copy the color images
-cp -r PlantVillage-Dataset/raw/color data/PlantVillage
-```
-
-### Option 2: Download from Kaggle
+### Option 1: Download from Kaggle (Recommended)
 
 ```bash
 # Install Kaggle CLI
 pip install kaggle
 
 # Download dataset
-kaggle datasets download -d emmarex/plantdisease
-unzip plantdisease.zip -d data/
+kaggle datasets download -d divyasharma20/plantv
+unzip plantv.zip -d data/
 ```
+
+### Option 2: Direct Download
+
+1. Visit [kaggle.com/datasets/divyasharma20/plantv](https://www.kaggle.com/datasets/divyasharma20/plantv)
+2. Click **Download** button
+3. Extract to `data/PlantVillage/`
 
 ## Expected Directory Structure
 
