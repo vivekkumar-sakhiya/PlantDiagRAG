@@ -157,7 +157,7 @@ Or download directly from: [HuggingFace Hub](https://huggingface.co/viveksakhiya
 ## 📚 Datasets
 
 ### PlantVillage
-- **Images**: 54,306 images across 38 classes
+- **Images**: 54,305 images across 38 classes
 - **Source**: [PlantVillage Dataset](https://www.kaggle.com/datasets/divyasharma20/plantv/data)
 
 ### PlantVillageVQA
