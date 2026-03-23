@@ -240,7 +240,7 @@ If you use PlantDiagRAG in your research, please cite:
 ## 📧 Contact
 
 - **Author**: Vivekkumar Sakhiya
-- **Email**: [vivekskahiya369@gmail.com]
+- **Email**: [viveksakhiya369@gmail.com]
 - **Supervisor**: Dr. Abhinav Kumar, MNNIT Allahabad
 
 ---
