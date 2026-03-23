@@ -55,7 +55,7 @@ data/
 
 | Dataset | Train | Validation | Test |
 |---------|-------|------------|------|
-| PlantVillage | 43,456 | 10,850 | - |
+| PlantVillage | 43,455 | 10,850 | - |
 | PlantVillageVQA | 135,526 | 19,351 | 38,632 |
 
 ## Test QA Format
