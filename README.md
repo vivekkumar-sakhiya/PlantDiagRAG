@@ -149,7 +149,7 @@ Model checkpoints are hosted on HuggingFace Hub due to their size:
 ```bash
 # Using huggingface_hub
 pip install huggingface_hub
-python -c "from huggingface_hub import hf_hub_download; hf_hub_download('viveksakhiya/PlantDiagRAG', 'best_vqa_model.pt', local_dir='checkpoints')"
+python -c "from huggingface_hub import hf_hub_download; hf_hub_download('vivek-sakhiya/PlantDiagRAG', 'best_vqa_model.pt', local_dir='checkpoints')"
 ```
 
 Or download directly from: [HuggingFace Hub](https://huggingface.co/viveksakhiya/PlantDiagRAG)
