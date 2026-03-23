@@ -83,7 +83,4 @@ The RAG system automatically builds a FAISS index from the knowledge base on fir
 - **Dimension**: 384
 
 ## Download
-
-If `all_kb_documents.json` is not included in the repository, download from:
-- HuggingFace: https://huggingface.co/viveksakhiya/PlantDiagRAG
-- Or copy from your Google Drive: `/PlantDiseaseRAG_Thesis/2_processed_data/chunks/all_kb_documents.json`
+- HuggingFace: https://huggingface.co/vivek-sakhiya/PlantDiagRAG
